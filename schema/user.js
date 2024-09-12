@@ -10,6 +10,11 @@ const userSchema = mongoose.Schema({
 		require: true,
 		type:String
 	}
-})
+},
+	{
+		timestamp:true,
+	}
+
+)
 
 export const User = mongoose.model('user',userSchema);
